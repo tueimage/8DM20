@@ -25,7 +25,7 @@ Week 2. A VAE model to generate synthetic data. This will serve as a baseline ge
 
 <!-- The practical session will introduce a segmentation model based on the U-Net and a baseline VAE implementation. -->
 You won't implement the models from scratch. The outline of the code is already given (have a look around the files in the folder `code`). The parts that you will implement are indicated with `# TODO`. 
-First, you will implement the segmentation model. To do this, start from `train_seg.py`. Once you can  train the segmentation model, move on to the VAE.
+First, you will implement the segmentation model. To do this, start from `train_unet.py`. Once you can  train the segmentation model, move on to the VAE.
 Note that the model architecture is designed to process 2D images, i.e., each slice is segmented individually. To save computation time, the images are downsampled during loading (this is already implemented).  
 
 ### Project
