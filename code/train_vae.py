@@ -23,7 +23,7 @@ else:
     device = torch.device("cpu")
 
 # directorys with data and to store training checkpoints and logs
-DATA_DIR = Path.cwd().patent / "TrainingData"
+DATA_DIR = Path.cwd().parent / "TrainingData"
 CHECKPOINTS_DIR = Path.cwd() / "vae_model_weights"
 CHECKPOINTS_DIR.mkdir(parents=True, exist_ok=True)
 TENSORBOARD_LOGDIR = "vae_runs"
