@@ -127,7 +127,7 @@ class Generator(nn.Module):
         self.head = nn.Conv2d(chs[-1], 1, kernel_size=3, padding=1)
 
     def forward(self, z):
-        """Performs the forward pass of decoder
+        """Performs the forward pass of generator
 
         Parameters
         ----------
