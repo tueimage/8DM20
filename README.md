@@ -10,7 +10,10 @@
 
 - It is advised to train models in 2D. To apply the segmentation model to a new patient in 3D, you can apply it slice by slice in a for loop and store the output again as a 3D image.
 
-- To save computation cost, you can work with the pre-processed images as I do in the data loader provided (first center cropped to 256x256 and then downsampled to 64x64). For your final results, you can choose to either evaluate at this resolution or to resample and un-crop to the original image space.
+- To save computation cost, you can work with the pre-processed images as I do in the data loader provided (e.g. downsampled to 64x64). For your final results, you can choose to either evaluate at this resolution or to resample and un-crop to the original image space.
+
+- Consider: How to have corresponding labels for your generated images (e.g. conditional generation or using the segmentation model). And if you want to improve, the segmentation model training, how to increase the variation in your generated data.
+
 
 
 ## Project background
@@ -57,11 +60,6 @@ This project is more similar to a research project than a course assignment and 
   - You might need to upgrade pip by `pip install --upgrade pip`
   - Install the dependencies from the `requirements.txt` file: `pip install -r requirements.txt`.
   
-  
-### Consider
-- How to have corresponding labels for your generated images (e.g. conditional generation or using the segmentation model).
-- How to increase the variation in your generated data.
-
 
 
 
