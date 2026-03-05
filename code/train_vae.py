@@ -66,8 +66,7 @@ partition = {
 
 # load training data and create DataLoader with batching and shuffling
 
-dataset = utils.ProstateMRDataset(partition["train"], IMAGE_SIZE, valid=True) # in my experiments the augmentations
-# did not help, so I set valid=True to disable them
+dataset = utils.ProstateMRDataset(partition["train"], IMAGE_SIZE)
 dataloader = DataLoader(
     dataset,
     batch_size=BATCH_SIZE,
